@@ -139,7 +139,7 @@ function people() {
 
 function people2() {
 
-class Person {
+class Person2 {
     constructor(firstName, lastName) {
       this.firstName = firstName;
       this.lastName = lastName;
@@ -156,7 +156,7 @@ class Person {
     }
   }
   
-  let rose = new Person("Rose", "Dawson");
+  let rose = new Person2 ("Rose", "Dawson");
   rose.run();
   rose.walk();
   rose.greeting();
@@ -182,3 +182,134 @@ class Car {
   let myCar = new Car("Nissan", "Rogue", 2017);
   myCar.make;
 }
+
+
+// Instantiating & Instances
+//NEW CODE
+
+function persona3 () {
+
+class Person3 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greeting() {
+    console.log(
+      "Hello, my name is " + this.name + " and I am " + this.age + "."
+    );
+  }
+}
+
+// instantiating
+let andrew = new Person3 ("Andrew", 30);
+let mike = new Person3 ("Mike", 24);
+let frank = new Person3 ("Frank", 29);
+
+andrew.greeting();
+mike.greeting();
+frank.greeting();
+}
+// Inheritance
+
+function Persona4() {
+
+class Person4 {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  greeting() {
+    console.log("Hello, my name is " + this.firstName + ".");
+  }
+}
+
+class NewStudent extends Person4 {
+  constructor(studentID, firstName, lastName) {
+    super(firstName, lastName);
+    this.studentID = studentID;
+  }
+  studentInfo() {
+    console.log(this.studentID + " " + this.firstName + ", " + this.lastName);
+  }
+}
+
+let student = new NewStudent(12, "John", "Smith");
+student.greeting();
+student.studentInfo();
+}
+
+//Hands on
+
+class Employee {
+  constructor(name, salary, hireDate) {
+    this.name = name;
+    this.salary = salary;
+    this.hireDate = hireDate;
+  }
+  getName() {
+    console.log("My name is " + this.name);
+  }
+  getSalary() {
+    console.log("I am asking for $" + this.salary + " for salary");
+  }
+  getHireDate() {
+    console.log("I am available to start on " + this.hireDate);
+  }
+}
+//Subclass
+class Manager extends Employee {
+  constructor(experience, name, salary, hireDate) {
+      super(name, salary, hireDate);
+      this.experience = experience;
+  }
+yearsExperience() {
+  console.log("I have " + this.experience + " years of experience");
+  }
+}
+
+let Man = new Manager("50", "Peter", "22k", "Nov 2017");
+Man.getName();
+Man.getSalary();
+Man.getHireDate();
+Man.yearsExperience();
+
+//2nd Subclass
+class Designer extends Employee {
+  constructor (degree, name, salary, hireDate) {
+      super(name, salary, hireDate);
+      this.degree = degree;
+  }
+  degreeCompleted() {
+      console.log("I have completed my degree on " + this.degree);
+  } 
+
+}
+
+let Des = new Designer("Development","Peter2","100k","10/12/1990"); //This is the order of line 281
+Des.getName();
+Des.getSalary();
+Des.getHireDate();
+Des.degreeCompleted();
+
+// 3rd Subclass
+
+class SalesAssociate extends Employee {
+  constructor (job, name, salary, hireDate){
+      super(name, salary, hireDate);
+      this.job = job;
+  }
+  jobDescription() {
+      console.log("I am applying for the position of " + this.job);
+  }
+}
+
+
+let sales = new SalesAssociate("Selling","Maria","20k","ASAP!");
+//Order of how they will appear
+sales.getName();
+sales.getSalary();
+sales.getHireDate();
+sales.jobDescription();
