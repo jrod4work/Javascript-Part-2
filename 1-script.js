@@ -100,6 +100,7 @@ class aClass {
 //   myInstance.sayName();
 //   myInstance.sayAge();
 
+function car() {
 
   class Vehicle {
     constructor(make, model, year) {
@@ -110,3 +111,74 @@ class aClass {
   }
   
   let myCar = new Vehicle("Nissan", "Rogue", 2017);
+
+  console.log(myCar);
+}
+
+
+//Methods 
+
+function people() {
+
+    class Person {
+        constructor(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+        }
+      
+        run() {
+          console.log(this.firstName + " " + this.lastName + " is running.");
+        }
+      }
+      
+      let rose = new Person("Rose", "Dawson");
+      rose.run();
+}
+
+//More Methods
+
+function people2() {
+
+class Person {
+    constructor(firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+  
+    run() {
+      console.log(this.firstName + " " + this.lastName + " is running.");
+    }
+    walk() {
+      console.log(this.firstName + " " + this.lastName + " is walking.");
+    }
+    greeting() {
+      console.log("Hello, my name is " + this.firstName + ".");
+    }
+  }
+  
+  let rose = new Person("Rose", "Dawson");
+  rose.run();
+  rose.walk();
+  rose.greeting();
+
+}
+
+//Getter
+
+function car2() {
+class Car {
+    constructor(make, model, year) {
+      this._make = make;
+      this._model = model;
+      this._year = year;
+    }
+  
+    get make() {
+      return this._make;
+    }
+  
+  }
+  
+  let myCar = new Car("Nissan", "Rogue", 2017);
+  myCar.make;
+}
