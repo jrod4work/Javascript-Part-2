@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.row {
+    border: 1px solid black;
+    height: 200px;
+  }
+  
+  .col-sm-6 {
+    border: 1px solid black;
+    height: 200px;
+  }
+  
+  .col-sm-4 {
+    border: 1px solid black;
+    height: 200px;
+  }
+  
+  .col-sm-8 {
+    border: 1px solid black;
+    height: 200px;
+  }
+  
+  .col-sm-3 {
+    border: 1px solid black;
+    height: 200px;
+  }
+  
+  .col-sm-9 {
+    border: 1px solid black;
+    height: 200px;
+  }
+
+  /* Second div */
+  .col-md-4 {
+    border: 1px solid black;
+    height: 200px;
+  }
+
+  .container {
+      margin-top: 15px;
+  }
+
+  .jumbotron {
+    width: 500px;
+  }
