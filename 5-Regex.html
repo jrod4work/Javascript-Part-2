@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please Enter Your First and Last Name</h1>
+    <form>
+        <label for="FirstN">First name:</label>
+        <input id="commentName" onkeyup="validateFirstName()" class="commentFormInput" placeholder="First name">
+        <label id="commentNamePrompt">Message:</label>
+        <br>
+        <br>
+
+        <label for="LastN">Last Name:</label>
+        <input id="lastName" onkeyup="validateLastName()" class="commentFormInput" placeholder="Last Name">
+        <label id="commentLastNamePrompt">Message:</label>
+
+        <br>
+        <br>
+
+       <button onclick="firstNameFormat()">Submit</button>
+    </form> 
+
+
+   
+
+<script src ="5-script.js"></script>
+
+
+</html>
