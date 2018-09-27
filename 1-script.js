@@ -241,7 +241,7 @@ student.greeting();
 student.studentInfo();
 }
 
-//Hands on
+//Project
 
 class Employee {
   constructor(name, salary, hireDate) {
