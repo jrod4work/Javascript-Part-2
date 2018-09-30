@@ -1,0 +1,16 @@
+html {
+    background-image: url("photo-1484977975800-86a4c7bd7235.jpeg")
+}
+
+header
+{
+    background-color:#ECF3F3;
+}
+
+.input{
+    color: red;
+}
+
+button {
+    font-size:20px;
+}
