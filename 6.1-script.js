@@ -2,7 +2,15 @@ $(document).ready(function(){
     $(".h1").hover(function() {
         $(this).css("color", "red");
     }, function(){
-        $(this).css("color", "black");
+        $(this).css("color", "blue");
+    });
+});
+
+$(document).ready(function(){    
+    $(".h1").hover(function(){
+        $(this).css("background-color", "orange");
+    }, function(){
+        $(this).css("background-color", "aquamarine");
     });
 });
 
@@ -17,12 +25,14 @@ $(document).ready(function(){
         $(this).hide();
     });
 });
+//or double click
 
-/* $(document).ready(function(){
-    $("input").keydown(function(){
-        $(this).css("color", "red");
-    });
-}); */
+// $(document).ready(function(){    
+//     $("li").dblclick(function(){
+//         $(this).hide();
+//     });
+// });
+
 
 $(document).ready(function(){    
     $("input").keydown(function(){
