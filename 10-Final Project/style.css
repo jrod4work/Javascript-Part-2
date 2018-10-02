@@ -1,0 +1,133 @@
+
+body {
+    background-image:url(images/triangle-wallpapers-25326-5238186.jpg);
+}
+
+
+/* Menu styling */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#796c77b8;
+    padding: 8px;
+    padding-right: 90px;
+    font-size: 25px;
+  }
+  
+  /* expands the header */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin-right:10px;
+  }
+
+  /* Puts Login to the side */
+  .login {
+    margin-left: 20px;
+  }
+  
+  
+/* makes the links side to side */
+  .date { 
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 23px;
+  }
+  .oneimage {
+      width:32px;
+      height: 32px;
+      padding-left: 21px;
+  }
+  /* End of Menu styling */
+
+  /* Start of Header styling */
+  .header-container {
+    color: black;
+    background-color: #543a69ad;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 200px;
+    height: 208px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+      width: 200px;
+      height:200px;
+  }
+
+  /* End of Header styling */
+
+   /* Lists */
+ 
+   li, h1{
+    display: flex;
+    justify-content: center;
+    color: #403616;
+    font-size: 20px;
+    line-height: 28px;
+
+   }
+   h1 {
+    border-style: solid;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #f6dec294;
+
+   }
+   ul  {
+    border-style: solid;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 56px;
+    background-color: #f6dec294;
+    padding-left: 0px;
+
+    
+   }
+  
+  /* Footer */
+
+   .footer {
+    position: fixed;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    background-color: #61497bd1;
+    color: white;
+    text-align: center;
+    height: 56px;
+    font-size: 24px;
+ }
+
+ .pfoot {
+     color:white;
+     margin-top: 6px;
+ 
+ }

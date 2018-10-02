@@ -6,11 +6,16 @@ newRequest.onreadystatechange = function() {
     document.getElementById("example2").innerHTML = myObj.age;
     for (var i = 0; i < myObj.cars.length; i++ ) {
        document.getElementById("example" + (i + 3)).innerHTML = myObj.cars[i].make + " " + myObj.cars[i].model;
-    }
+    };
+
+    document.getElementById("example").innerHTML = myObj.bio;
+
+
   }
 };
 newRequest.open("GET", "8.1-new.json", true);
 newRequest.send();
+
 
 
 // "cars": [
